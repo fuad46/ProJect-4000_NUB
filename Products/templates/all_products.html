@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="{% static 'product.css' %}">
+</head>
+
+<body>
+  <H1>Products</H1>
+  <div class="products">
+    {% for product in products %}
+    <div class="product">
+      <h2>{{product.name}}</h2>
+      <p id="description">{{product.description}}</p>
+      <p id="price">Price: {{product.price}}</p>
+      
+      <img id="image" src="{{product.image.url}}" >
+      <a href="{% url 'product_detail' product.id %}">Details</a>
+    </div>
+    {% endfor %}
+  </div>
+</body>

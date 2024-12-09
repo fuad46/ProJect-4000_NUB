@@ -1,0 +1,1 @@
+document.getElementById("hero-text").innerText= "Hello Welcome"

@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details</title>
+  <link rel="stylesheet" href="{% static 'product.css' %}">
+</head>
+
+<body>
+  <H1>Products Details</H1>
+  <div class="products">
+  
+    <div class="product">
+      <h2>{{product.name}}</h2>
+      <p id="description">{{product.description}}</p>
+      <p id="price">Price: {{product.price}}</p> <br><br>
+      
+      <img id="image" src="{{product.image.url}}" >
+  <br><br> <br> <br>
+      <div class="des">
+        Bread is a staple food made from flour, water, and yeast, enjoyed worldwide in various forms. Its textures and flavors vary, from soft loaves to crispy baguettes. Bread holds cultural significance, 
+        accompanying meals or served on its own. Rich in carbohydrates, it provides energy and can be easily customized. <br> <br> This product is build by secrect recipe with healthy ingredients. <br> <br> Sold a lot of them. <br> <br>Call 012828 and Order !
+       
+      </div>
+    </div>
+   
+  </div>
+</body>

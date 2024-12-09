@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}"> 
+  
+</head>
+<!-- <style>
+
+</style> -->
+<body>
+  <div class="nav">
+    <div class="logo">
+      Zabir's Food House
+    </div>
+    <div>
+      <ul>
+        <li style="background-color: orangered;"><a href="#" style="color: #fff;">Home</a></li>
+        <li><a href="{% url 'products' %}">Products</a></li>
+        
+        <li><a href="{% url 'signup' %}">Signup</a></li>
+      </ul>
+    </div>
+      
+  </div>
+  <div id="hero">
+    <h1 id="hero-text"></h1>
+  </div>
+  <script src="{%static 'js/home.js' %}"></script>
+</body>
+</html>
