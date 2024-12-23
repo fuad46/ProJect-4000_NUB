@@ -8,13 +8,92 @@
   <link rel="stylesheet" href="{% static 'css/home.css' %}"> 
   
 </head>
-<!-- <style>
+<style>
+.about-para{
+  font-weight: 400;
+  font-size: 42px;
+  color: rgb(3, 28, 82);
+  width: 700px;
+  height: 600px;
+  margin: 32px 80px;
+  line-height: 60px;
 
-</style> -->
+}
+.about-img{
+ 
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+}
+.about-img-main{
+  border-radius: 16px 4px;
+}
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 120px 0px;
+}
+#hero{
+  display: flex;
+  width: 100%;
+  background-color: #d85b13;
+  margin-top: 48px;
+}
+.hero-text{
+  position: relative;
+  top: 200px;
+  left: 400px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 84px;
+}
+.hero-div-img{
+  position: absolute;
+  width: 100%;
+  height: 700px;
+}
+.products-ads-sec{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 0px;
+  align-items: center;
+  justify-content: center;
+}
+.products-ads{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 400px;
+  padding: 8px;
+  border: 1px solid rgb(219, 199, 191);
+  margin: 80px;
+
+  
+}
+.products-ads-img{
+  height: 300px;
+}
+.btn-prod-ads{
+  border: none;
+  color: #fff;
+  background-color: #d85b13;
+  height: 44px;
+  
+ 
+}
+.link-ads{
+  color: #fff;
+  font-size: 18px;
+}
+
+</style>
 <body>
   <div class="nav">
     <div class="logo">
-      Zabir's Food House
+      ♡ Zabir's Food House
     </div>
     <div>
       <ul>
@@ -27,8 +106,43 @@
       
   </div>
   <div id="hero">
-    <h1 id="hero-text"></h1>
+    <h1 class ="hero-text">Order From Food House<h1>
+    <div class="hero-img-div">
+      <img width="100%" height="700px" src="https://www.shutterstock.com/image-photo/cookie-factory-food-industry-fabrication-600nw-1023985072.jpg" alt="img">
+    </div>
   </div>
-  <script src="{%static 'js/home.js' %}"></script>
+
+  <div class="about">
+    <div class="about-img">
+      <img class="about-img-main" width="100%" height="100%" src="https://www.shutterstock.com/image-photo/bakery-shop-assortment-bread-on-600nw-2498875445.jpg" alt="img">
+    </div>
+    <div class="about-para">
+    " <br>This Shop was established in Year 2024. 
+      Owner Of Shop Is Fuad AL Zabir.
+      Mr Fuad wanted people to eat fresh food and also can have it from anywhere of the country.
+      Hope you love our products. <br> <br> "
+    </div>
+  </div>
+  <br>
+  <h1 style="color: #d85b13; margin-left: 120px;">TOP SELLING ITEMS</h1>
+  
+  <div class="products-ads-sec">
+    
+    <div class="products-ads">
+      <img class="products-ads-img" src="https://media.istockphoto.com/id/1134897271/photo/biscuits-with-chocolate-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=lzX92wxN5mwL0ZsQndE_XubR0h_g3fyMgy0sKMQIAtg=" alt="">
+      <button class="btn-prod-ads"><a class="link-ads" href="{% url 'products' %}">View Products</a></button>
+    </div>
+    <div class="products-ads">
+      <img class="products-ads-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa-ZTqNxxKI7LVFnf2bTWL0C78gyJrTKhy2g&s" alt="">
+      <button class="btn-prod-ads"><a class="link-ads" href="{% url 'products' %}">View Products</a></button>
+    </div>
+    <div class="products-ads">
+      <img class="products-ads-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvM6Jx7L4BnNbV1d1tS58A4XQGQqBTCbIUww&s" alt="">
+      <button class="btn-prod-ads"><a class="link-ads" href="{% url 'products' %}">View Products</a></button>
+    </div>
+   
+  
+  </div>
+  <!-- <script src="{%static 'js/home.js' %}"></script> -->
 </body>
 </html>
