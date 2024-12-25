@@ -18,9 +18,9 @@
                         <h2>{{ item.product.name }}</h2>
                         <p> Price: <span id="item-price-{{item.product.id}}">${{ item.product.price }}</span></p>
                         <div class="quantity-controls">
-                            <button onclick="updateQuantity('{{ item.product.id }}', -1)">-</button>
-                            <span id="quantity-{{ item.product.id }}">{{ item.quantity }}</span>
-                            <button onclick="updateQuantity('{{ item.product.id }}', 1)">+</button>
+                            <button onclick="updateQuantity('{ item.product.id }', -1)">-</button>
+                            <span id="quantity-{{ item.product.id.price }}">{{ item.quantity }}</span>
+                            <button onclick="updateQuantity('{item.product.id }', 1)">+</button>
                         </div>
                     </div>
                     <p class="item-total-price" id="item-total-{{ item.product.id }}">
@@ -50,5 +50,6 @@
 
         document.getElementById('cart-total').innerText = `$${cartTotal}`;
     </script>
+ 
 </body>
 </html>
