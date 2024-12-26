@@ -19,6 +19,7 @@
       
       <img id="image" src="{{product.image.url}}" >
       <a href="{% url 'product_detail' product.id %}">Details</a>
+      <a style="background-color: white; color: orangered; border: 1px solid orangered;" href="{% url 'cart' %}">Add To Cart</a>
     </div>
     {% endfor %}
   </div>
